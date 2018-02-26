@@ -51,7 +51,7 @@ main {
 nav {
 	width: 100%;
 	padding: 1.5em 0;
-	background-color: #DED8D8;
+	background-color: #072027;
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -59,6 +59,7 @@ nav {
 
 nav a {
 	margin: 0 1.5em;
+	color: #DED8DA;
 }
 
 .about-me__link, .projects__link {
@@ -106,6 +107,28 @@ nav a {
 	display: block;
 }
 
+.project:before {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	content: "";	
+}
+
+.project__name {
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer {
+	text-align: center;
+	background-color: #072027;
+}
+
+footer p {
+	color: #DED8DA;
+}
+
 #about-me {
 	margin: 3em 4em;
 	-webkit-align-items: center;
@@ -124,11 +147,7 @@ nav a {
 	text-align: center;
 }
 
-footer {
-	text-align: center;
-	background-color: #DED8D8;
-}
-
 #contact-me {
-
+	width: 50%;
+	margin: 0 auto;
 }
