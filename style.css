@@ -1,16 +1,24 @@
-html, body {
+html, body, .content {
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-body, #projects, #about-me {
+body, header, nav, #projects, #about-me, .content {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+
+body, nav {
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	-o-flex-flow: column nowrap;
+	flex-flow: column nowrap;
 }
 
 body, #about-me {
@@ -21,14 +29,17 @@ body, #about-me {
 	justify-content: space-between;
 }
 
+#about-me, nav {
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+}
+
 body {
 	overflow: auto;
 	background-color: #fff;
-	-webkit-flex-flow: column nowrap;
-	-moz-flex-flow: column nowrap;
-	-ms-flex-flow: column nowrap;
-	-o-flex-flow: column nowrap;
-	flex-flow: column nowrap;
 }
 
 a {
@@ -41,29 +52,32 @@ a img {
 
 header {
 	min-height: 100%;
-	background: url(replace-pic.png) center/cover no-repeat;
+	/*background: url(replace-pic.png) center/cover no-repeat;*/
 }
 
 main {
-	/*position: relative;*/
+	
 }
 
 nav {
-	width: 100%;
-	padding: 1.5em 0;
+	width: 15%;
+	padding: 4em 0;
 	background-color: #072027;
-	position: fixed;
-	top: 0;
 	z-index: 1;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 nav a {
-	margin: 0 1.5em;
+	margin-top: 1em;
 	color: #DED8DA;
 }
 
-.about-me__link, .projects__link {
-	float: right;
+.projects__link {
+	margin-top: 2em;
 }
 
 #projects {
@@ -121,8 +135,10 @@ nav a {
 }
 
 footer {
+	width: 100%;
 	text-align: center;
 	background-color: #072027;
+	align-self: flex-end;
 }
 
 footer p {
@@ -131,11 +147,6 @@ footer p {
 
 #about-me {
 	margin: 3em 4em;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	-o-align-items: center;
-	align-items: center;
 }
 
 #about-me img {
