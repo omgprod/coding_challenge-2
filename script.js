@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	// Show .recent projects in header
 	$('.recent-projects').fadeIn(2000);
 
@@ -9,7 +8,7 @@ $(document).ready(function() {
 
 	$('nav a').each(function() {
 		const linkPage = this.href;
-
+		
 		if(activePage == linkPage) {
 			$(this).closest('a').addClass('active');
 		}
