@@ -105,7 +105,8 @@ nav a {
 .recent-projects {
 	width: 80%;
 	height: 100%;
-	background: url('pics/example-pic.png') center/cover no-repeat;
+	background: url('pics/example-pic.png') center/95% no-repeat;
+	display: none;
 	position: absolute;
 	top: 0;
 	right: 0;
