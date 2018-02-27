@@ -33,10 +33,12 @@ a img {
 	border: none;
 }
 
+/* Menu and recent projects */
 header {
 	min-height: 100%;
 }
 
+/* Menu (navbar) */
 .menu {
 	width: 180px;
 	height: 100%;
@@ -108,6 +110,7 @@ nav a {
 	margin-top: 2em;
 }
 
+/* Recent projects */
 .recent-projects {
 	width: 80%;
 	height: 100%;
@@ -118,10 +121,12 @@ nav a {
 	right: 0;
 }
 
+/* Main content */
 main {
 	margin-left: 180px;
 }
 
+/* Main projects */
 #projects {
 	margin: 3em 0;
 	display: -webkit-flex;
@@ -182,6 +187,7 @@ main {
 	vertical-align: middle;
 }
 
+/* Footer */
 footer {
 	width: 100%;
 	text-align: center;
@@ -193,6 +199,7 @@ footer p {
 	color: #DED8DA;
 }
 
+/* Description of myself */
 #about-me {
 	margin: 3em 5em 3em 180px;
 	display: -webkit-flex;
@@ -218,15 +225,18 @@ footer p {
 	border-radius: 50%;
 }
 
+/* Tagline */
 .tagline {
 	text-align: center;
 }
 
+/* Contact Me */
 #contact-me {
 	width: 50%;
 	margin: 0 auto;
 }
 
+/* Content of the other pages */
 .content {
 	display: -webkit-flex;
 	display: -moz-flex;
