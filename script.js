@@ -4,16 +4,18 @@ $(document).ready(function() {
 	$('.recent-projects').fadeIn(2000);
 
 	// Show the current page at nav
-	const currentUrl = window.location.href;
-	const activePage = currentUrl;
-
-	$('nav a').each(function() {
-		const linkPage = this.href;
-
-		if(activePage == linkPage) {
-			$(this).closest('a').addClass('active');
-		}
-	});
+	(function showCurrentPage() {
+			const currentUrl = window.location.href;
+			const activePage = currentUrl;
+	
+			$('nav a').each(function() {
+				const linkPage = this.href;
+	
+				if(activePage == linkPage) {
+					$(this).closest('a').addClass('active');
+				}
+			});
+		})();
 
 	// Scroll to the anchor elements slower
 	const scrollToAnchor = (aid) => {
