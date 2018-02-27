@@ -35,11 +35,6 @@ a img {
 
 header {
 	min-height: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
 }
 
 .menu {
@@ -49,11 +44,11 @@ header {
 	position: fixed;
 	left: -100px;
 	z-index: 1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .menu:hover {
@@ -105,6 +100,19 @@ nav a {
 
 .projects__link {
 	margin-top: 2em;
+}
+
+.recent-projects {
+	width: 80%;
+	height: 100%;
+	background: url('pics/example-pic.png') center/cover no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+main {
+	margin-left: 180px;
 }
 
 #projects {
@@ -179,7 +187,7 @@ footer p {
 }
 
 #about-me {
-	margin: 3em 4em;
+	margin: 3em 5em 3em 180px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -198,6 +206,7 @@ footer p {
 }
 
 #about-me img {
+	width: 250px;
 	margin-right: 2em;
 	border-radius: 50%;
 }
@@ -209,4 +218,12 @@ footer p {
 #contact-me {
 	width: 50%;
 	margin: 0 auto;
+}
+
+.content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
