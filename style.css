@@ -208,8 +208,11 @@ main {
 /* Footer */
 footer {
 	width: 100%;
-	text-align: center;
 	background-color: #072027;
+	-webkit-align-self: flex-end;
+	-moz-align-self: flex-end;
+	-ms-align-self: flex-end;
+	-o-align-self: flex-end;
 	align-self: flex-end;
 }
 
@@ -246,13 +249,16 @@ footer p {
 
 /* Tagline */
 .tagline {
-	text-align: center;
+	margin: -2em 4em 3em 0;
+	padding: 0 1em;
+	text-align: right;
 }
 
 /* Contact Me form */
 #mc_embed_signup {
 	width: 300px;
 	margin: 2em auto;
+	text-align: center;
 }
 
 label {
@@ -272,6 +278,10 @@ label {
 	height: 30px;
 	background-color: #fff;
 	border: none;
+}
+
+footer p:last-child {
+	text-align: center;
 }
 
 /* Content of the other pages */
@@ -299,12 +309,28 @@ label {
 		padding: 1em 0;
 	}
 
-	#about-me {
-		margin-left: 190px;
+	.tagline {
+		margin-top: 0;
 	}
 }
 
-@media (max-width: 830px) {
+@media (max-width: 800px) {
+	.menu {
+		display: none;
+	}
+
+	.recent-projects {
+		width: 100%;
+	}
+
+	main {
+		margin-left: 0;
+	}
+
+	#projects {
+		margin: 0;
+	}
+
 	.holder {
 		width: 45%;
 	}
@@ -325,8 +351,34 @@ label {
 	#about-me p {
 		margin-top: 2em;
 	}
+
+	.tagline {
+		text-align: center;
+		margin: 0 0 2em 0;
+	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+	.holder {
+		width: 100%;
+		margin-bottom: 0;
+	}
 
+	.holder img {
+		width: 280px;
+	}
+
+	#about-me {
+		margin: 3em 2em;
+	}
+
+	#about-me img {
+		margin: 0;
+	}
+
+	.email {
+		width: 90%;
+		height: 30px;
+		font-size: 1em;
+	}
 }
