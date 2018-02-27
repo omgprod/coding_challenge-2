@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	// Show .recent projects in header
+	// Show recent projects in header
 	$('.recent-projects').fadeIn(2000);
 
 	// Show the current page at nav
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$('nav a').each(function() {
 		const linkPage = this.href;
-		
+
 		if(activePage == linkPage) {
 			$(this).closest('a').addClass('active');
 		}
@@ -26,5 +26,15 @@ $(document).ready(function() {
 
 	$('.about-me__link').click(function() {
 		scrollToAnchor('about-me');
+	});
+
+	// Move elements to the right when hover over menu
+	$('.menu').hover(function() {
+		$('main').animate({marginLeft: '180px'});
+		$('#about-me').animate({marginLeft: '200px'});
+	},
+	function() {
+		$('main').animate({marginLeft: '100px'});
+		$('#about-me').animate({marginLeft: '100px'});
 	});
 });

@@ -129,7 +129,7 @@ nav a:hover {
 
 /* Main content */
 main {
-	margin-left: 180px;
+	margin-left: 100px;
 }
 
 /* Main projects */
@@ -220,7 +220,7 @@ footer p {
 
 /* Description of myself */
 #about-me {
-	margin: 3em 5em 3em 200px;
+	margin: 3em 5em 3em 100px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
