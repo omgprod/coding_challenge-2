@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
+	// Show .recent projects in header
 	$('.recent-projects').fadeIn(2000);
 
+	// Show the current page at nav
 	const currentUrl = window.location.href;
 	const activePage = currentUrl;
 
@@ -12,6 +15,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// Scroll to the anchor elements slower
 	const scrollToAnchor = (aid) => {
 		const aTag = $('#' + aid);
 		$('html, body').animate({scrollTop: aTag.offset().top}, 1500);
