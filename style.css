@@ -340,12 +340,74 @@ footer p:last-child {
 		z-index: 1;
 	}
 
-	.burger {
+	#burger {
+		display: none;
+	}
+
+	/* hamburger button 
+	https://codemyui.com/hamburger-menu-full-screen-navigation-menu-pure-css/ */
+	body input + label {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 10;
+	}
+
+	body input + label span {
+		width: 100%;
+		height: 2px;
+		margin-top: -1px;
+		background: #020304;
 		display: block;
 		position: absolute;
+		top: 50%;
+		left: 0;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-ms-transition: .5s;
+		-o-transition: .5s;
+		transition: .5s;
+	}
+
+	.white-span {
+		background-color: #fff;
+	}
+
+	body input + label span:first-child {
+		top: 4px;
+	}
+
+	body input + label span:last-child {
 		top: 30px;
-		left: 30px;
-		z-index: 10;
+	}
+
+	body label:hover {
+		cursor: pointer;
+	}
+
+	body input:checked + label span {
+		opacity: 0;
+		top: 50%;
+	}
+
+	body input:checked + label span:first-child {
+		opacity: 1;
+		-webkit-transform: rotate(405deg);
+		-moz-transform: rotate(405deg);
+		-ms-transform: rotate(405deg);
+		-o-transform: rotate(405deg);
+		transform: rotate(405deg);
+	}
+
+	body input:checked + label span:last-child {
+		opacity: 1;
+		-webkit-transform: rotate(-405deg);
+		-moz-transform: rotate(-405deg);
+		-ms-transform: rotate(-405deg);
+		-o-transform: rotate(-405deg);
+		transform: rotate(-405deg);
 	}
 
 	.burger-nav {
