@@ -8,6 +8,7 @@ html, body, .content {
 body {
 	overflow: auto;
 	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
 	background-color: #fff;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -28,6 +29,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
 
 a img {
@@ -68,7 +70,6 @@ header {
 }
 
 .menu-title {
-	color: #DED8DA;
 	font-size: 1.5em;
 	position: absolute;
 	top: 50%;
@@ -100,7 +101,6 @@ header {
 .menu-nav a {
 	margin-top: 0.5em;
 	padding: 1em 0;
-	color: #DED8DA;
 	font-size: 0.9em;
 	display: block;
 }
@@ -117,7 +117,7 @@ header {
 	margin-top: 2em;
 }
 
-.burger, .burger-menu {
+#burger, .burger-menu {
 	display: none;
 }
 
@@ -193,7 +193,6 @@ main {
 }
 
 .project__name {
-	color: white;
 	font-size: 1em;
 	font-weight: 400;
 	display: inline-block;
@@ -214,15 +213,9 @@ main {
 footer {
 	width: 100%;
 	background-color: #072027;
-	-webkit-align-self: flex-end;
-	-moz-align-self: flex-end;
-	-ms-align-self: flex-end;
-	-o-align-self: flex-end;
-	align-self: flex-end;
 }
 
 footer p {
-	color: #DED8DA;
 	line-height: 1.4;
 }
 
@@ -266,10 +259,6 @@ footer p {
 	text-align: center;
 }
 
-label {
-	color: #DED8DA;
-}
-
 .email {
 	width: 100%;
 	height: 30px;
@@ -296,6 +285,68 @@ footer p:last-child {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	-o-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.page-title {
+	width: 30em;
+	height: 70px;
+	margin-top: 1em;
+	padding-right: 2em;
+	text-align: right;
+	background-color: #072027;
+	/*display: none;*/
+	-webkit-align-self: flex-end;
+	-moz-align-self: flex-end;
+	-ms-align-self: flex-end;
+	-o-align-self: flex-end;
+	align-self: flex-end;
+}
+
+/* Side-Hustle projects */
+.side-hustle {
+	margin: 3em 0 3em 200px;
+	color: #000;
+}
+
+.side-hustle__project {
+	height: 130px;
+	margin: 0 1em 1em 0;
+	padding: 1em;
+	border: 1px solid #000;
+	position: relative;
+}
+
+.side-hustle__project:hover {
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+.side-hustle__project a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.side-hustle__project img {
+	width: 200px;
+	margin-right: 1em;
+	float: left;
 }
 
 @media (max-width: 1279px) {
@@ -338,10 +389,6 @@ footer p:last-child {
 		top: 0;
 		left: 0;
 		z-index: 1;
-	}
-
-	#burger {
-		display: none;
 	}
 
 	/* hamburger button 
@@ -420,7 +467,6 @@ footer p:last-child {
 
 	.burger-nav a {
 		padding: 1em 0;
-		color: #DED8DA;
 		display: block;
 	}
 
@@ -465,6 +511,18 @@ footer p:last-child {
 		text-align: center;
 		margin: 0 0 2em 0;
 	}
+
+	.page-title {
+		width: 25em;
+	}
+
+	.side-hustle {
+		margin-left: 0;
+	}
+
+	.side-hustle div {
+		margin: 0 1em 1em 1em;
+	}
 }
 
 @media (max-width: 600px) {
@@ -489,5 +547,20 @@ footer p:last-child {
 		width: 90%;
 		height: 30px;
 		font-size: 1em;
+	}
+
+	.page-title {
+		width: 100%;
+		margin-top: 5em;
+	}
+
+	.side-hustle__project {
+		height: auto;
+		text-align: center;
+	}
+
+	.side-hustle__project img {
+		margin: 0;
+		float: none;
 	}
 }
