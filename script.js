@@ -44,4 +44,6 @@ $(document).ready(function() {
 		// Change color of the hamburger button
 		$('span').toggleClass('white-span');
 	});
+
+	$('.page-title').fadeIn(1500);
 });
