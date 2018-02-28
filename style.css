@@ -39,7 +39,7 @@ header {
 	min-height: 100%;
 }
 
-/* Menu (navbar) */
+/* Navbar for desktop */
 /* https://codemyui.com/pure-css-slide-navigation-menu/ */
 .menu {
 	width: 180px;
@@ -328,6 +328,7 @@ footer p:last-child {
 		display: none;
 	}
 
+	/* Navbar for mobile */
 	.burger-menu {
 		width: 200px;
 		height: 100%;
