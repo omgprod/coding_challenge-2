@@ -40,6 +40,7 @@ header {
 }
 
 /* Menu (navbar) */
+/* https://codemyui.com/pure-css-slide-navigation-menu/ */
 .menu {
 	width: 180px;
 	height: 100%;
@@ -84,7 +85,7 @@ header {
 	transform: rotate(270deg);
 }
 
-nav {
+.menu-nav {
 	width: 100%;
 	text-align: center;
 	position: absolute;
@@ -92,11 +93,11 @@ nav {
 	display: none;
 }
 
-.menu:hover nav {
+.menu:hover .menu-nav {
 	display: block;
 }
 
-nav a {
+.menu-nav a {
 	margin-top: 0.5em;
 	padding: 1em 0;
 	color: #DED8DA;
@@ -108,12 +109,16 @@ nav a {
 	border-left: 3px solid #DED8DA;
 }
 
-nav a:hover {
+.menu-nav a:hover {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .projects__link {
 	margin-top: 2em;
+}
+
+.burger, .burger-menu {
+	display: none;
 }
 
 /* Recent projects */
@@ -315,8 +320,49 @@ footer p:last-child {
 }
 
 @media (max-width: 800px) {
+	header {
+		height: auto;
+	}
+
 	.menu {
 		display: none;
+	}
+
+	.burger-menu {
+		width: 200px;
+		height: 100%;
+		background-color: #072027;
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	.burger {
+		display: block;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		z-index: 10;
+	}
+
+	.burger-nav {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 5em;
+		display: block;
+	}
+
+	.burger-nav a {
+		padding: 1em 0;
+		color: #DED8DA;
+		display: block;
+	}
+
+	.burger-nav a:active {
+		background-color: rgba(255, 255, 255, 0.3);
 	}
 
 	.recent-projects {
@@ -328,7 +374,7 @@ footer p:last-child {
 	}
 
 	#projects {
-		margin: 0;
+		margin: 0 0 2em 0;
 	}
 
 	.holder {
@@ -360,7 +406,7 @@ footer p:last-child {
 
 @media (max-width: 600px) {
 	.holder {
-		width: 100%;
+		width: 80%;
 		margin-bottom: 0;
 	}
 

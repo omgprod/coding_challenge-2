@@ -6,7 +6,7 @@ $(document).ready(function() {
 	const currentUrl = window.location.href;
 	const activePage = currentUrl;
 
-	$('nav a').each(function() {
+	$('.menu-nav a').each(function() {
 		const linkPage = this.href;
 
 		if(activePage == linkPage) {
@@ -36,5 +36,10 @@ $(document).ready(function() {
 	function() {
 		$('main').animate({marginLeft: '100px'});
 		$('#about-me').animate({marginLeft: '100px'});
+	});
+
+	// Toggle navbar for mobile
+	$('.burger').click(function() {
+		$('.burger-menu').toggle('slow');
 	});
 });
