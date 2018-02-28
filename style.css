@@ -327,12 +327,46 @@ footer p:last-child {
 	float: left;
 }
 
-.design-process h2 {
+.design-process h2, .presentations h2, .performances p {
 	text-align: center;
 }
 
 .design-process p {
 	margin: 1em 3em;
+}
+
+.presentations {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.presentations div {
+	width: 50%;
+}
+
+.speaking-engagements {
+	border-right: 3px solid #000;
+}
+
+.speaking-engagements ul {
+	margin-top: 2em;
+}
+
+.speaking-engagements li {
+	margin: 1em;
+	line-height: 1.4;
+}
+
+.speaking-engagements a {
+	color: #000;
 }
 
 @media (max-width: 1279px) {
@@ -501,6 +535,22 @@ footer p:last-child {
 	.page-title {
 		width: 25em;
 	}
+
+	.presentations {
+		-webkit-flex-flow: column nowrap;
+		-moz-flex-flow: column nowrap;
+		-ms-flex-flow: column nowrap;
+		-o-flex-flow: column nowrap;
+		flex-flow: column nowrap;
+	}
+
+	.presentations div {
+		width: 100%;
+	}
+
+	.speaking-engagements {
+		border-right: none;
+	}
 }
 
 @media (max-width: 600px) {
@@ -546,5 +596,9 @@ footer p:last-child {
 	.side-hustles img {
 		margin: 0;
 		float: none;
+	}
+
+	.presentations ul {
+		padding-left: 20px;
 	}
 }
