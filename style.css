@@ -278,6 +278,8 @@ footer p:last-child {
 	text-align: center;
 }
 
+/* All pages except for index */
+/* Title */
 .page-title {
 	width: 30em;
 	height: 70px;
@@ -290,12 +292,13 @@ footer p:last-child {
 	right: 0;
 }
 
-/* Content of the other pages */
+/* Content */
 .content {
 	margin: 9em 0 3em 0;
 	color: #000;
 }
 
+/* Side-Hustle projects */
 .side-hustles {
 	height: 130px;
 	margin: 0 1em 1em 1em;
@@ -327,7 +330,8 @@ footer p:last-child {
 	float: left;
 }
 
-.design-process h2, .presentations h2, .performances p {
+/* Design Process */
+.design-process h2 {
 	text-align: center;
 }
 
@@ -335,6 +339,7 @@ footer p:last-child {
 	margin: 1em 3em;
 }
 
+/* Presentations */
 .presentations {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -369,12 +374,20 @@ footer p:last-child {
 	color: #000;
 }
 
+.presentations h2, .performances p {
+	text-align: center;
+}
+
 @media (max-width: 1279px) {
 	.holder img {
 		width: 240px;
 		padding: 0;
 	}
 }
+
+/* Writings */
+
+
 
 @media (max-width: 1024px) {
 	.holder {
