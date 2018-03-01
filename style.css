@@ -380,14 +380,18 @@ footer p:last-child {
 
 /* Writings */
 .medium-articles {
-	margin: 12em 2em 3em 2em;
+	margin: 12em 10em 3em 2em;
 }
 
-.medium-articles h4 {
-	margin-top: 4em;
+.medium-articles h3 {
+	margin-top: 3.5em;
 }
 
-.pub-date {
+.medium-author, .medium-date {
+	font-size: 0.8em;
+}
+
+.medium-date {
 	padding-bottom: 3em;
 	border-bottom: 3px solid #000;
 }
