@@ -118,8 +118,8 @@ header {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
-.projects__link {
-	margin-top: 2em;
+.menu-nav .projects__link {
+	margin-top: 3em;
 }
 
 #burger, .burger-menu {
