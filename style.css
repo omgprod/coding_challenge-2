@@ -42,7 +42,8 @@ p {
 
 /* Menu and recent projects */
 header {
-	min-height: 100%;
+	height: 100%;
+	margin-left: 80px;
 }
 
 /* Navbar for desktop */
@@ -127,23 +128,133 @@ header {
 
 /* Recent projects */
 .recent-projects {
-	width: 100%;
+	width: 80%;
 	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.recent-projects ul, .recent-projects div {
+	/*display: none;*/
+}
+
+/* Nav around the recent projects */
+.recent-projects ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	position: absolute;
+}
+
+.in-projects {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+.in-projects a {
+	color: #000;
+}
+
+.in-projects a:hover {
+	color: rgba(0, 0, 256, 0.7);
+}
+
+.down-the-page {
+	top: 4em;
+}
+
+.down-the-page li:first-child {
+	margin-left: 2em;
+}
+
+.down-the-page li:last-child {
+	margin-right: 2em;
+	float: right;
+}
+
+.current-projects {
+	text-align: center;
+	bottom: 2em;
+}
+
+.current-projects li {
+	margin: 0.5em;
+}
+
+.layer {
+	position: absolute;
+}
+
+.one {
+	width: 70%;
+	height: 20em;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.05);
 	top: 0;
+	bottom: 0;
+	left: 0;
 	right: 0;
 }
 
-.layer1 {
-	width: 60%;
-	height: 60%;
-	margin: 7em auto 0 auto;
-	background-color: black;
+.triangle {
+	width: 8em;
+	left: 0.3em;
+}
+
+.circle1 {
+	width: 7em;
+	height: 7em;
+	margin: 0 1em 1.5em 3.5em;
+	border: 6px solid red;
+	border-radius: 50%;
+	left: 0;
+	bottom: 0;
+}
+
+.rectangle {
+	width: 11em;
+	height: 14em;
+	margin: auto;
+	border: 8px solid blue;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.circle2 {
+	width: 10em;
+	height: 10em;
+	border: 6px solid yellow;
+	border-radius: 50%;
+	top: 0;
+	right: 2em;
+}
+
+.line {
+	width: 12em;
+	height: 0.4em;
+	background-color: green;
+	right: 5em;
+	bottom: 9em;
 }
 
 /* Main content */
 main {
 	margin-left: 100px;
+}
+
+.arrow-up {
+	border-radius: 50%;
+	background-color: rgba(256, 256, 256, 0.1);
+	display: none;
+	position: fixed;
+	right: 1.2em;
+	bottom: 0.7em;
+	z-index: 100;
 }
 
 /* Main projects */

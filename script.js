@@ -1,26 +1,48 @@
 $(document).ready(function() {
-	// 
-	var currentX = '';
-	var currentY = '';
-	var movementConstant = .015;
+	// Slow fade in of the recent projects section
+	$('.recent-projects ul, .recent-projects div').fadeIn(4000);
 
-	$('.recent-projects').mousemove(function(e) {
-		if(currentX == '') currentX = e.pageX;
-		var xdiff = e.pageX - currentX;
-		currentX = e.pageX;
+	// Parallax effect makes the recent projects' elements move to the opposite direction from the cursor
+	$(window).mousemove(function(e) {
+		var change;
+		var xPos = e.clientX;
+		var yPos = e.clientY;
+		var left = change * 20;
+		var xPos = xPos * 2;
+		var yPos = yPos * 2;
 
-		if(currentY == '') currentY = e.pageY;
-		var ydiff = e.pageY - currentY;
-		currentY = e.pageY;
-
-		$('.recent-projects').each(function(i, el) {
-			var movement = (i + 1) * (xdiff * movementConstant);
-			var movementy = (i + 1) * (ydiff * movementConstant);
-			var newX = $(el).position().left + movement;
-			var newY = $(el).position().top + movementy;
-			$(el).css('left', newX + 'px');
-			$(el).css('top', newY + 'px');
+		$('.one').css({
+			'bottom': (0 + (yPos / 70)) + 'px', 
+			'right': (0 + (xPos / 70)) + 'px'
 		});
+		$('.triangle').css({
+			'top': (0 - (yPos / 80)) + 'px', 
+			'left': (0 - (xPos / 80)) + 'px'
+		});
+		$('.circle1').css({
+			'bottom': (0 + (yPos / 80)) + 'px', 
+			'left': (0 - (xPos / 80)) + 'px'
+		});
+		$('.rectangle').css({
+			'top': (0 + (yPos / 40)) + 'px', 
+			'right': (0 + (xPos / 40)) + 'px'
+		});
+		$('.circle2').css({
+			'top': (0 - (yPos / 80)) + 'px', 
+			'right': (32 + (xPos / 80)) + 'px'
+		});
+		$('.line').css({
+			'bottom': (144 + (yPos / 70)) + 'px', 
+			'right': (96 + (xPos / 70)) + 'px'
+		});
+	});
+
+	// Animate menu elements around the recent projects
+	$('.in-projects').hover(function() {
+		$(this).animate({letterSpacing: '2px'}, 1200);
+	},
+	function() {
+		$(this).animate({letterSpacing: '1px'}, 1200);
 	});
 
 	// Show the current page at nav
@@ -38,7 +60,7 @@ $(document).ready(function() {
 	// Scroll to the anchor elements slower
 	const scrollToAnchor = (aid) => {
 		const aTag = $('#' + aid);
-		$('html, body').animate({scrollTop: aTag.offset().top}, 1500);
+		$('html, body').animate({scrollTop: aTag.offset().top}, 1300);
 	}
 
 	$('.projects__link').click(function() {
@@ -47,6 +69,10 @@ $(document).ready(function() {
 
 	$('.about-me__link').click(function() {
 		scrollToAnchor('about-me');
+	});
+
+	$('.arrow-up').click(function() {
+		scrollToAnchor('header');
 	});
 
 	// Move elements to the right when hover over menu
@@ -66,10 +92,18 @@ $(document).ready(function() {
 		$('span').toggleClass('white-span');
 	});
 
+	// Show the scroll up button
+	$(window).scroll(function() {
+		if($(this).scrollTop()) {
+			$('.arrow-up').fadeIn();
+		} else {
+			$('.arrow-up').fadeOut();
+		}
+	});
+
 	// $('.page-title').fadeIn(1500);
 
 	// Get Medium posts
-	// https://codepen.io/jasonm4130/pen/vZYbQx?editors=1000
 	$(function() {
 		var data = {rss_url: 'https://medium.com/feed/@tosfan4ever'};
 

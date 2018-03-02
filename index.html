@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header>
+		<header id="header">
 			<!-- Navbar for desktop -->
 			<div class="menu">
 				<div class="menu-title">Menu</div>
@@ -45,10 +45,31 @@
 			</div>
 			<!-- Navigation and Flow: Recent projects -->
 			<div class="recent-projects">
-				<div class="layer1"></div>
+				<!-- Links to the wall of projects and about me section -->
+				<ul class="down-the-page">
+					<li class="in-projects"><a class="about-me__link" href="#about-me">About Me</a></li>
+					<li class="in-projects"><a class="projects__link" href="#projects">Projects</a></li>
+				</ul>
+				<!-- Links of current projects -->
+				<ul class="current-projects">
+					<li class="in-projects"><a href="">Maropost</a></li>
+					<li class="in-projects"><a href="">CryptoCanucks</a></li>
+					<li class="in-projects"><a href="">BlockchainHub</a></li><br>
+					<li class="in-projects"><a href="">Silly Valley</a></li>
+					<li class="in-projects"><a href="">UXelerate</a></li>
+				</ul>
+				<!-- Animated items -->
+				<div class="layer one">
+					<div class="layer circle1"></div>
+					<div class="layer triangle"><img src="pics/button_shape_triangle-128.png"></div>
+					<div class="layer rectangle"></div>
+					<div class="layer circle2"></div>
+					<div class="layer line"></div>
+				</div>
 			</div>
 		</header>
 		<main>
+			<a href="#header"><img class="arrow-up" src="pics/icon-ios7-arrow-up-64.png"></a>
 			<!-- Main projects -->
 			<div id="projects">
 				<div class="holder">
