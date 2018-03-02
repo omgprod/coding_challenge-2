@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	// Slow fade in of the recent projects section
-	$('.recent-projects ul, .recent-projects div').fadeIn(4000);
+	$('.recent-projects ul').fadeIn(2000);
+	// $('.current-projects').slideUp(1000);
+	$('.recent-projects div').fadeIn(4000);
 
 	// Parallax effect makes the recent projects' elements move to the opposite direction from the cursor
 	$(window).mousemove(function(e) {
@@ -12,28 +14,28 @@ $(document).ready(function() {
 		var yPos = yPos * 2;
 
 		$('.one').css({
-			'bottom': (0 + (yPos / 70)) + 'px', 
-			'right': (0 + (xPos / 70)) + 'px'
+			'bottom': (0 + (yPos / 60)) + 'px', 
+			'right': (0 + (xPos / 60)) + 'px'
 		});
 		$('.triangle').css({
-			'top': (0 - (yPos / 80)) + 'px', 
-			'left': (0 - (xPos / 80)) + 'px'
+			'top': (0 - (yPos / 50)) + 'px', 
+			'left': (0 - (xPos / 50)) + 'px'
 		});
 		$('.circle1').css({
-			'bottom': (0 + (yPos / 80)) + 'px', 
-			'left': (0 - (xPos / 80)) + 'px'
+			'bottom': (0 + (yPos / 50)) + 'px', 
+			'left': (0 - (xPos / 50)) + 'px'
 		});
 		$('.rectangle').css({
-			'top': (0 + (yPos / 40)) + 'px', 
-			'right': (0 + (xPos / 40)) + 'px'
+			'top': (0 + (yPos / 25)) + 'px', 
+			'right': (0 + (xPos / 25)) + 'px'
 		});
 		$('.circle2').css({
-			'top': (0 - (yPos / 80)) + 'px', 
-			'right': (32 + (xPos / 80)) + 'px'
+			'top': (0 - (yPos / 50)) + 'px', 
+			'right': (32 + (xPos / 50)) + 'px'
 		});
 		$('.line').css({
-			'bottom': (144 + (yPos / 70)) + 'px', 
-			'right': (96 + (xPos / 70)) + 'px'
+			'bottom': (144 + (yPos / 50)) + 'px', 
+			'right': (96 + (xPos / 50)) + 'px'
 		});
 	});
 
