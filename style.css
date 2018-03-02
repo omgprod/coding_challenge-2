@@ -164,6 +164,7 @@ header {
 
 .down-the-page {
 	top: 4em;
+	z-index: 10;
 }
 
 .down-the-page li:first-child {
@@ -178,10 +179,16 @@ header {
 .current-projects {
 	text-align: center;
 	bottom: 2em;
+	z-index: 10;
 }
 
 .current-projects li {
-	margin: 0.5em;
+	margin: 0.2em;
+}
+
+.down-the-page li, .current-projects li {
+	padding: 0.3em;
+	background-color: rgba(256, 256, 256, 0.8);
 }
 
 .projects-active {
@@ -408,7 +415,7 @@ footer p:last-child {
 	padding-right: 2em;
 	text-align: right;
 	background-color: #072027;
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	top: 1em;
 	right: 0;
@@ -541,7 +548,7 @@ footer p:last-child {
 
 @media (max-width: 800px) {
 	header {
-		height: auto;
+		margin-left: 0;
 	}
 
 	.menu {
@@ -646,6 +653,34 @@ footer p:last-child {
 	.recent-projects {
 		width: 100%;
 	}
+	
+	.down-the-page {
+		top: 5em;
+	}
+
+	.down-the-page li:first-child {
+		margin-left: 7em;
+	}
+
+	.down-the-page li:last-child {
+		margin-right: 7em;
+	}
+
+	.current-projects {
+		bottom: 2.5em;
+	}
+
+	.current-projects li {
+		margin: 0.5em;
+	}
+
+	.one {
+		width: 80%;
+	}
+
+	.line {
+		right: 4em;
+	}
 
 	main {
 		margin-left: 0px;
@@ -703,6 +738,22 @@ footer p:last-child {
 }
 
 @media (max-width: 600px) {
+	.down-the-page li:first-child {
+		margin-left: 3em;
+	}
+
+	.down-the-page li:last-child {
+		margin-right: 3em;
+	}
+
+	.one {
+		width: 90%;
+	}
+
+	.line {
+		right: 3em;
+	}
+
 	.holder {
 		width: 90%;
 		margin-bottom: 0;

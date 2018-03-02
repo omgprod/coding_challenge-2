@@ -103,7 +103,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// $('.page-title').fadeIn(1500);
+	$('.page-title').fadeIn(1500);
 
 	// Get Medium posts
 	$(function() {
