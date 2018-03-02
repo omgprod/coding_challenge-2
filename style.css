@@ -110,7 +110,7 @@ header {
 	display: block;
 }
 
-.menu-active {
+.active {
 	border-left: 3px solid #DED8DA;
 }
 
