@@ -210,26 +210,14 @@ header {
 	right: 0;
 }
 
-.triangle {
-	width: 8em;
-	left: 0.3em;
-}
-
 .circle1 {
-	width: 7em;
-	height: 7em;
 	margin: 0 1em 1.5em 3.5em;
-	border: 6px solid red;
-	border-radius: 50%;
 	left: 0;
 	bottom: 0;
 }
 
 .rectangle {
-	width: 11em;
-	height: 14em;
 	margin: auto;
-	border: 8px solid blue;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -237,20 +225,18 @@ header {
 }
 
 .circle2 {
-	width: 10em;
-	height: 10em;
-	border: 6px solid yellow;
-	border-radius: 50%;
 	top: 0;
 	right: 2em;
 }
 
-.line {
-	width: 12em;
-	height: 0.4em;
-	background-color: green;
-	right: 5em;
-	bottom: 9em;
+.line1 {
+	right: 2em;
+	bottom: 8em;
+}
+
+.line2 {
+	right: 6em;
+	bottom: 2em;
 }
 
 /* Main content */

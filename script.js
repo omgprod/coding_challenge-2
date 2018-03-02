@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	// Slow fade in of the recent projects section
 	$('.recent-projects ul').fadeIn(2000);
-	// $('.current-projects').slideUp(1000);
 	$('.recent-projects div').fadeIn(4000);
 
 	// Parallax effect makes the recent projects' elements move to the opposite direction from the cursor
@@ -33,9 +32,13 @@ $(document).ready(function() {
 			'top': (0 - (yPos / 50)) + 'px', 
 			'right': (32 + (xPos / 50)) + 'px'
 		});
-		$('.line').css({
-			'bottom': (144 + (yPos / 50)) + 'px', 
-			'right': (96 + (xPos / 50)) + 'px'
+		$('.line1').css({
+			'bottom': (32 + (yPos / 50)) + 'px', 
+			'right': (128 + (xPos / 50)) + 'px'
+		});
+		$('.line2').css({
+			'bottom': (96 + (yPos / 55)) + 'px', 
+			'right': (32 + (xPos / 55)) + 'px'
 		});
 	});
 
