@@ -60,7 +60,7 @@ $(document).ready(function() {
 	// Scroll to the anchor elements slower
 	const scrollToAnchor = (aid) => {
 		const aTag = $('#' + aid);
-		$('html, body').animate({scrollTop: aTag.offset().top}, 1300);
+		$('html, body').animate({scrollTop: aTag.offset().top}, 1200);
 	}
 
 	$('.projects__link').click(function() {
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	});
 
 	$('.arrow-up').click(function() {
-		scrollToAnchor('header');
+		scrollToAnchor('body');
 	});
 
 	// Move elements to the right when hover over menu
