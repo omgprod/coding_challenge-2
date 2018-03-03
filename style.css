@@ -134,7 +134,7 @@ header {
 	position: relative;
 }
 
-.recent-projects ul, .recent-projects div {
+.recent-projects ul, .recent-projects svg {
 	display: none;
 }
 
@@ -159,7 +159,7 @@ header {
 }
 
 .in-projects a:hover {
-	color: rgba(0, 0, 256, 0.7);
+	color: rgba(0, 0, 255, 0.7);
 }
 
 .down-the-page {
@@ -188,11 +188,11 @@ header {
 
 .down-the-page li, .current-projects li {
 	padding: 0.3em;
-	background-color: rgba(256, 256, 256, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .projects-active {
-	color: rgba(0, 0, 256, 0.7);
+	color: rgba(0, 0, 255, 0.7);
 }
 
 .layer {
@@ -210,13 +210,22 @@ header {
 	right: 0;
 }
 
+.triangle {
+	width: 135px;
+	height: 135px;
+}
+
 .circle1 {
+	width: 110px;
+	height: 110px;
 	margin: 0 1em 1.5em 3.5em;
 	left: 0;
 	bottom: 0;
 }
 
 .rectangle {
+	width: 230px;
+	height: 300px;
 	margin: auto;
 	top: 0;
 	bottom: 0;
@@ -225,18 +234,76 @@ header {
 }
 
 .circle2 {
+	width: 140px;
+	height: 140px;
 	top: 0;
 	right: 2em;
 }
 
 .line1 {
+	width: 210px;
+	height: 210px;
 	right: 2em;
 	bottom: 8em;
 }
 
 .line2 {
+	width: 170px;
+	height: 170px;
 	right: 6em;
 	bottom: 2em;
+}
+
+#triangle {
+	fill: none;
+	stroke: #000;
+	stroke-width: 5;
+	stroke-dasharray: 900;
+	stroke-dashoffset: 900;
+	animation: draw 7s forwards linear;
+}
+
+#circle1 {
+	fill: none;
+	stroke: #f00;
+	stroke-width: 6;
+	stroke-dasharray: 700;
+	stroke-dashoffset: 700;
+	animation: draw 7s forwards linear;
+}
+
+#rectangle {
+	width: 200px;
+	height: 270px;
+	fill: none;
+	stroke: #00f;
+	stroke-width: 5;
+	stroke-dasharray: 1300;
+	stroke-dashoffset: 1300;
+	animation: draw 5s forwards linear;
+}
+
+#circle2 {
+	fill: none;
+	stroke: #ff0;
+	stroke-width: 6;
+	stroke-dasharray: 700;
+	stroke-dashoffset: 700;
+	animation: draw 7s forwards linear;
+}
+
+#line1, #line2 {
+	stroke: #0f0;
+	stroke-width: 6;
+	stroke-dasharray: 700;
+	stroke-dashoffset: 700;
+	animation: draw 8s forwards linear;
+}
+
+@keyframes draw {
+	100% {
+		stroke-dashoffset: 0;
+	}
 }
 
 /* Main content */
@@ -246,7 +313,7 @@ main {
 
 .arrow-up {
 	border-radius: 50%;
-	background-color: rgba(256, 256, 256, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
 	display: none;
 	position: fixed;
 	right: 1.2em;

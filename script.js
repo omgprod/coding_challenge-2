@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	// Slow fade in of the recent projects section
-	$('.recent-projects ul').fadeIn(2000);
-	$('.recent-projects div').fadeIn(4000);
+	$('.recent-projects ul, .recent-projects svg').fadeIn(5000);
 
 	// Parallax effect makes the recent projects' elements move to the opposite direction from the cursor
 	$(window).mousemove(function(e) {
