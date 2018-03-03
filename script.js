@@ -12,32 +12,32 @@ $(document).ready(function() {
 		var yPos = yPos * 2;
 
 		$('.one').css({
-			'bottom': (0 + (yPos / 60)) + 'px', 
-			'right': (0 + (xPos / 60)) + 'px'
+			'bottom': (0 + (yPos / 50)) + 'px', 
+			'right': (0 + (xPos / 50)) + 'px'
 		});
 		$('.triangle').css({
-			'top': (0 - (yPos / 50)) + 'px', 
-			'left': (0 - (xPos / 50)) + 'px'
+			'top': (0 - (yPos / 40)) + 'px', 
+			'left': (0 - (xPos / 30)) + 'px'
 		});
 		$('.circle1').css({
-			'bottom': (0 + (yPos / 50)) + 'px', 
-			'left': (0 - (xPos / 50)) + 'px'
+			'bottom': (0 + (yPos / 30)) + 'px', 
+			'left': (0 - (xPos / 30)) + 'px'
 		});
 		$('.rectangle').css({
-			'top': (0 + (yPos / 25)) + 'px', 
-			'right': (0 + (xPos / 25)) + 'px'
+			'top': (0 + (yPos / 20)) + 'px', 
+			'right': (0 + (xPos / 20)) + 'px'
 		});
 		$('.circle2').css({
-			'top': (0 - (yPos / 50)) + 'px', 
-			'right': (32 + (xPos / 50)) + 'px'
+			'top': (0 - (yPos / 30)) + 'px', 
+			'right': (32 + (xPos / 30)) + 'px'
 		});
 		$('.line1').css({
 			'bottom': (32 + (yPos / 50)) + 'px', 
 			'right': (128 + (xPos / 50)) + 'px'
 		});
 		$('.line2').css({
-			'bottom': (96 + (yPos / 55)) + 'px', 
-			'right': (32 + (xPos / 55)) + 'px'
+			'bottom': (96 + (yPos / 50)) + 'px', 
+			'right': (32 + (xPos / 50)) + 'px'
 		});
 	});
 
