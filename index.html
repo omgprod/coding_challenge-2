@@ -13,7 +13,33 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
+		<!-- SVG animation by http://edwindejongh.co/ -->
+		<div class="home-page">
+			<div class="page__intro">
+				<div class="intro__boxes">
+					<svg width="100%" height="100%">
+						<defs>
+							<mask id="mask" x="0" y="0" width="100%" height="100%">
+								<rect width="100%" height="100%" fill="white"></rect>
+								<rect x="50%" y="50%" width="500" height="500" class="top rect1"></rect>
+								<rect x="50%" y="50%" width="500" height="500" class="top rect2"></rect>
+								<rect x="50%" y="50%" width="500" height="500" class="top rect3"></rect>
+								<rect x="50%" y="50%" width="650" height="650" class="top rect4"></rect>
+								<rect x="50%" y="50%" width="650" height="650" class="top rect5"></rect>
+								<rect x="50%" y="50%" width="750" height="750" class="top rect6"></rect>
+								<rect x="50%" y="50%" width="1128" height="1128" class="top rect7"></rect>
+							</mask>
+						</defs>
+						<rect class="mask" mask="url(#mask)" width="100%" height="100%"></rect>
+					</svg>
+				</div>
+				<div class="intro__title">
+					<h1>Lorem ipsum dolor sit amet</h1>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+					<a href="general-content.html"><button class="intro__button">Continue</button></a>
+				</div>
+			</div>
+		</div>
 		<script
 		  src="https://code.jquery.com/jquery-3.3.1.min.js"
 		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

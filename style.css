@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -39,6 +43,145 @@ a img {
 
 p {
 	line-height: 1.4;
+}
+
+/* Home page */
+.home-page {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #01051a;
+}
+
+.page__intro {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.top {
+	/*x: 50%;
+	y: 50%;*/
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+	transform-origin: 50% 50% 0;
+	transition: all 25s linear;
+}
+
+.rect1 {
+	opacity: 0.3;
+	transform: translate3d(-50%, -50%, 0) rotate(-15deg) scale(1);
+}
+
+.animate .rect1 {
+	opacity: 0.4;
+	transform: translate3d(-50%, -50%, 0) rotate(-11deg) scale(1.2);
+}
+
+.rect2 {
+	opacity: 0.5;
+	transform: translate3d(-50%, -50%, 0) rotate(0deg) scale(1);
+}
+
+.animate .rect2 {
+	transform: translate3d(-50%, -50%, 0) rotate(10deg) scale(1.2);
+}
+
+.rect3 {
+	opacity: 0.6;
+	transform: translate3d(-50%, -50%, 0) rotate(-75deg) scale(1);
+}
+
+.animate .rect3 {
+	transform: translate3d(-50%, -50%, 0) rotate(-80deg) scale(1.5);
+}
+
+.rect4 {
+	opacity: 0.8;
+	transform: translate3d(-50%, -50%, 0) rotate(-60deg) scale(0.77);
+}
+
+.animate .rect4 {
+	transform: translate3d(-50%, -50%, 0) rotate(-75deg) scale(1.34);
+}
+
+.rect5 {
+	transform: translate3d(-50%, -50%, 0) rotate(-45deg) scale(0.77);
+}
+
+.animate .rect5 {
+	transform: translate3d(-50%, -50%, 0) rotate(-75deg) scale(1.49);
+}
+
+.rect6 {
+	transform: translate3d(-50%, -50%, 0) rotate(-60deg) scale(1);
+}
+
+.animate .rect6 {
+	transform: translate3d(-50%, -50%, 0) rotate(-90deg) scale(2);
+}
+
+.rect7 {
+	transform: translate3d(-50%, -50%, 0) rotate(-75deg) scale(1);
+}
+
+.animate .rect7 {
+	transform: translate3d(-50%, -50%, 0) rotate(-125deg) scale(2.66);
+}
+
+.intro__boxes.no-transitions .top {
+	transition-duration: 0s;
+}
+
+.mask {
+	fill: #01051a;
+}
+
+.intro__boxes {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgb(27, 190, 211) 0%, rgb(0, 0, 160) 100%);
+	opacity: 1;
+	position: absolute;
+	z-index: 1;
+	perspective: 600px;
+	transition: opacity 1s cubic-bezier(0.15, 0.005, 0.155, 1);
+}
+
+.intro__boxes.animate {
+	opacity: 1;
+}
+
+.intro__boxes.fade-out {
+	opacity: 0;
+}
+
+.intro__title {
+	width: 100%;
+	margin-top: 10em;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	z-index: 100;
+}
+
+.intro__button {
+	margin-top: 2em;
+	padding: 1.2em 2em 1em 2em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+	transition: all 0.7s ease-out;
+	background: linear-gradient(to right, rgb(27, 190, 211), rgb(0, 0, 160));
+	background-size: 300% 300%;
+	border: none;
+	cursor: pointer;
+}
+
+.intro__button:hover {
+	background-position: 99% 50%;
 }
 
 /* Menu and recent projects */

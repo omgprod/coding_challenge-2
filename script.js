@@ -1,4 +1,21 @@
 $(document).ready(function() {
+	// Index page SVG animation
+	setTimeout(function() {
+		$('.intro__boxes').addClass('animate');
+		setTimeout(function() {
+			$('.intro__boxes').addClass('no-transitions');
+			$('.intro__boxes').addClass('fade-out');
+			setTimeout(function() {
+				$('.intro__boxes').removeClass('animate');
+				setTimeout(function() {
+					$('.intro__boxes').removeClass('no-transitions');
+					$('.intro__boxes').removeClass('fade-out');
+					intro.init();
+				}, 10);
+			}, 1000);
+		}, 25000);
+	}, 100);
+
 	// Slow fade in of the recent projects section
 	$('.recent-projects ul, .recent-projects svg').fadeIn(5000);
 
