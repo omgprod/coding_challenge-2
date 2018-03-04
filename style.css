@@ -59,9 +59,7 @@ p {
 	position: relative;
 }
 
-.top {
-	/*x: 50%;
-	y: 50%;*/
+.rect {
 	fill: none;
 	stroke: black;
 	stroke-width: 2px;
@@ -130,7 +128,7 @@ p {
 	transform: translate3d(-50%, -50%, 0) rotate(-125deg) scale(2.66);
 }
 
-.intro__boxes.no-transitions .top {
+.intro__boxes.no-transitions .rect {
 	transition-duration: 0s;
 }
 
