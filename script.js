@@ -121,36 +121,4 @@ $(document).ready(function() {
 			$('.arrow-up').fadeOut();
 		}
 	});
-
-	// Slow fade in of the title
-	$('.page-title').fadeIn(1800);
-
-	// Get Medium posts
-	// I only managed to get RSS feed, but it's messy and doesn't look nice
-	// $(function() {
-	// 	var data = {rss_url: 'https://medium.com/feed/@tosfan4ever'};
-
-	// 	$.get('https://api.rss2json.com/v1/api.json', data, function(response) {
-	// 		if(response.status == 'ok') {
-	// 			console.log(response);
-	// 			$.each(response.items, function(k, item) {
-	// 				// $('<div></div>').appendTo('.medium-articles').addClass('article');
-	// 				var categories = item.categories;
-	// 				if(categories.length < 2) {
-	// 					$('response.items').remove();
-	// 					// return false;
-	// 				} else {
-	// 					$('<h3 class="medium-title">' + item.title + '</h3>').appendTo('.medium-articles');
-	// 					$('<p class="medium-author">By ' + item.author + '</p>').appendTo('.medium-articles');
-	// 					var yourString = item.description.replace(/<img[^>]*>/g,""); // Replace with your string
-	// 					var maxLength = 120; // Maximum number of characters to extract
-	// 					var trimmedString = yourString.substr(0, maxLength); // Trim the string to the maximum length
-	// 					trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))); // Re-trim if we are in the middle of a word
-	// 					$('<p class="medium-string">' + trimmedString + '...</p>').appendTo('.medium-articles');
-	// 					$('<p class="medium-date">' + item.pubDate + '</p>').appendTo('.medium-articles');
-	// 				}
-	// 			});
-	// 		}
-	// 	});
-	// });
 });
