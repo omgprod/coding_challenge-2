@@ -315,7 +315,7 @@ header {
 
 .down-the-page {
 	top: 4em;
-	z-index: 10;
+	z-index: 3;
 }
 
 .down-the-page li:first-child {
@@ -330,7 +330,7 @@ header {
 .current-projects {
 	text-align: center;
 	bottom: 2em;
-	z-index: 10;
+	z-index: 3;
 }
 
 .current-projects li {
@@ -338,7 +338,7 @@ header {
 }
 
 .down-the-page li, .current-projects li {
-	padding: 0.3em;
+	padding: 0.4em 0.3em 0.3em 0.3em;
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -808,11 +808,11 @@ footer p:last-child {
 
 .current-projects__project {
 	margin: 12em 0 3em 0;
+	padding: 0 1em;
 	text-align: center;
 }
 
 .current-projects__project a, .current-projects__project p {
-	padding: 0 1em;
 	color: #000;
 }
 
@@ -954,7 +954,7 @@ footer p:last-child {
 	}
 	
 	.down-the-page {
-		top: 5em;
+		top: 4em;
 	}
 
 	.down-the-page li:first-child {
@@ -966,7 +966,7 @@ footer p:last-child {
 	}
 
 	.current-projects {
-		bottom: 2em;
+		bottom: 1.5em;
 	}
 
 	.current-projects li {
@@ -975,6 +975,19 @@ footer p:last-child {
 
 	.one {
 		width: 80%;
+		height: 15em;
+	}
+
+	.circle2 {
+		top: 1em;
+	}
+
+	.line1 {
+		bottom: 4em;
+	}
+
+	.line2 {
+		bottom: 0em;
 	}
 
 	main {
@@ -1043,6 +1056,7 @@ footer p:last-child {
 
 	.one {
 		width: 90%;
+		height: 13em;
 	}
 
 	.holder {
