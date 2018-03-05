@@ -515,7 +515,7 @@ main {
 	bottom: 0;
 	left: 0;
 	box-shadow: 0 0 0 0.3em rgba(0, 0, 0, 0.8);
-	/*display: none;*/
+	display: none;
 }
 
 .holder:hover .project {
@@ -617,7 +617,7 @@ footer p:last-child {
 /* Title */
 .page-title {
 	width: 30em;
-	height: 70px;
+	height: 4.5em;
 	padding-right: 2em;
 	text-align: right;
 	background-color: #072027;
@@ -709,6 +709,10 @@ footer p:last-child {
 	color: #000;
 }
 
+.speaking-engagements a:hover {
+	color: #191970;
+}
+
 .presentations h2, .performances p {
 	text-align: center;
 }
@@ -765,6 +769,20 @@ footer p:last-child {
 	padding-bottom: 3em;
 	border-bottom: 3px solid #000;
 }*/
+
+/* Recent projects */
+.page-title__project {
+	height: 7.5em;
+}
+
+.current-projects__project {
+	margin: 13em 0 3em 0;
+	text-align: center;
+}
+
+.current-projects__project a {
+	color: #000;
+}
 
 @media (max-width: 1279px) {
 	.holder img {

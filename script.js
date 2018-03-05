@@ -123,7 +123,7 @@ $(document).ready(function() {
 	});
 
 	// Slow fade in of the title
-	$('.page-title').fadeIn(1500);
+	$('.page-title').fadeIn(1800);
 
 	// Get Medium posts
 	// I only managed to get RSS feed, but it's messy and doesn't look nice
