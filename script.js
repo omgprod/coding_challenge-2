@@ -122,39 +122,35 @@ $(document).ready(function() {
 		}
 	});
 
+	// Slow fade in of the title
 	$('.page-title').fadeIn(1500);
 
 	// Get Medium posts
-	$(function() {
-		var data = {rss_url: 'https://medium.com/feed/@tosfan4ever'};
+	// I only managed to get RSS feed, but it's messy and doesn't look nice
+	// $(function() {
+	// 	var data = {rss_url: 'https://medium.com/feed/@tosfan4ever'};
 
-		$.get('https://api.rss2json.com/v1/api.json', data, function(response) {
-			if(response.status == 'ok') {
-				console.log(response);
-				$.each(response.items, function(k, item) {
-					// $('<div></div>').appendTo('.medium-articles').addClass('article');
-					var categories = item.categories;
-					if(categories.length < 2) {
-						$('response.items').remove();
-						// return false;
-					} else {
-						$('<h3 class="medium-title">' + item.title + '</h3>').appendTo('.medium-articles');
-						$('<p class="medium-author">By ' + item.author + '</p>').appendTo('.medium-articles');
-						var yourString = item.description.replace(/<img[^>]*>/g,""); // Replace with your string
-						var maxLength = 120; // Maximum number of characters to extract
-						var trimmedString = yourString.substr(0, maxLength); // Trim the string to the maximum length
-						trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))); // Re-trim if we are in the middle of a word
-						$('<p class="medium-string">' + trimmedString + '...</p>').appendTo('.medium-articles');
-						$('<p class="medium-date">' + item.pubDate + '</p>').appendTo('.medium-articles');
-					}
-					// var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
-					// var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
-					// var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
-					// var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
-					// var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-					// $('<div class="medium-pic"><img src="' + src + '" width="360px" height="240px"></div>').appendTo('.medium-article');
-				});
-			}
-		});
-	});
+	// 	$.get('https://api.rss2json.com/v1/api.json', data, function(response) {
+	// 		if(response.status == 'ok') {
+	// 			console.log(response);
+	// 			$.each(response.items, function(k, item) {
+	// 				// $('<div></div>').appendTo('.medium-articles').addClass('article');
+	// 				var categories = item.categories;
+	// 				if(categories.length < 2) {
+	// 					$('response.items').remove();
+	// 					// return false;
+	// 				} else {
+	// 					$('<h3 class="medium-title">' + item.title + '</h3>').appendTo('.medium-articles');
+	// 					$('<p class="medium-author">By ' + item.author + '</p>').appendTo('.medium-articles');
+	// 					var yourString = item.description.replace(/<img[^>]*>/g,""); // Replace with your string
+	// 					var maxLength = 120; // Maximum number of characters to extract
+	// 					var trimmedString = yourString.substr(0, maxLength); // Trim the string to the maximum length
+	// 					trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))); // Re-trim if we are in the middle of a word
+	// 					$('<p class="medium-string">' + trimmedString + '...</p>').appendTo('.medium-articles');
+	// 					$('<p class="medium-date">' + item.pubDate + '</p>').appendTo('.medium-articles');
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
 });
