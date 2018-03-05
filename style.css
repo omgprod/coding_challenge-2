@@ -621,22 +621,41 @@ footer p:last-child {
 	padding-right: 2em;
 	text-align: right;
 	background-color: #072027;
-	display: none;
 	position: absolute;
-	top: 1em;
+	top: 1.5em;
 	right: 0;
+}
+
+.pages-lines {
+	width: 100px;
+	position: absolute;
+	right: 22em;
+	z-index: 5;
+}
+
+.pages-lines-line1, .pages-lines-line2 {
+	width: 40px;
+	height: 130px;
+}
+
+#pages-lines-line1, #pages-lines-line2 {
+	stroke: #fff;
+	stroke-width: 4;
+	stroke-dasharray: 700;
+	stroke-dashoffset: 700;
+	animation: draw 10s forwards linear;
 }
 
 /* Content */
 .content {
-	margin: 9em 0 3em 0;
+	margin: 10em 0 3em 0;
 	color: #000;
 }
 
 /* Side-Hustle projects */
 .side-hustles {
 	height: 170px;
-	margin: 0 1em 1em 1em;
+	margin: 0 7em 1em 7em;
 	padding: 1em;
 	border: 1px solid #000;
 	position: relative;
@@ -663,15 +682,6 @@ footer p:last-child {
 	width: 200px;
 	margin-right: 1em;
 	float: left;
-}
-
-/* Design Process */
-.design-process h2 {
-	text-align: center;
-}
-
-.design-process p {
-	margin: 1em 3em;
 }
 
 /* Presentations */
@@ -717,10 +727,22 @@ footer p:last-child {
 	text-align: center;
 }
 
+/* Design Process */
+.design-process h2 {
+	text-align: center;
+}
+
+.design-process p {
+	margin: 1em 3em;
+}
+
 /* Writings */
 .medium-articles {
-	margin: 12em 10em 3em 2em;
 	text-align: center;
+}
+
+.medium-articles h3 {
+	padding: 0 1em;
 }
 
 .big-medium-icon {
@@ -757,30 +779,40 @@ footer p:last-child {
 	opacity: 0;
 }
 
-/*.medium-articles h3 {
-	margin-top: 3.5em;
-}
-
-.medium-author, .medium-date {
-	font-size: 0.8em;
-}
-
-.medium-date {
-	padding-bottom: 3em;
-	border-bottom: 3px solid #000;
-}*/
-
 /* Recent projects */
+.pages-lines__project {
+	right: 25em;
+}
+
+.pages-lines-line3, .pages-lines-line4 {
+	width: 40px;
+	height: 150px;
+}
+
+#pages-lines-line3, #pages-lines-line4 {
+	stroke: #fff;
+	stroke-width: 4;
+	stroke-dasharray: 700;
+	stroke-dashoffset: 700;
+	animation: draw 10s forwards linear;
+}
+
 .page-title__project {
+	width: 33em;
 	height: 7.5em;
 }
 
+.page-title__project h2 {
+	padding: 0.3em 0;
+}
+
 .current-projects__project {
-	margin: 13em 0 3em 0;
+	margin: 12em 0 3em 0;
 	text-align: center;
 }
 
-.current-projects__project a {
+.current-projects__project a, .current-projects__project p {
+	padding: 0 1em;
 	color: #000;
 }
 
@@ -788,6 +820,10 @@ footer p:last-child {
 	.holder img {
 		width: 240px;
 		padding: 0;
+	}
+
+	.side-hustles {
+		margin: 0 5em 1em 5em;
 	}
 }
 
@@ -802,6 +838,10 @@ footer p:last-child {
 
 	.tagline {
 		margin-top: 0;
+	}
+
+	.side-hustles {
+		margin: 0 3em 1em 3em;
 	}
 }
 
@@ -823,7 +863,7 @@ footer p:last-child {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 1;
+		z-index: 7;
 	}
 
 	/* hamburger button 
@@ -971,8 +1011,8 @@ footer p:last-child {
 		margin: 0 0 2em 0;
 	}
 
-	.page-title {
-		width: 25em;
+	.side-hustles {
+		margin: 0 1em 1em 1em;
 	}
 
 	.presentations {
@@ -1031,10 +1071,22 @@ footer p:last-child {
 		margin-top: 12em;
 	}
 
+	.pages-lines {
+		top: 4em;
+		left: 1em;
+	}
+
+	.pages-lines-line1, .pages-lines-line2 {
+		width: 30px;
+		height: 100px;
+	}
+
+	#pages-lines-line1, #pages-lines-line2 {
+		stroke-width: 3;
+	}
+
 	.page-title {
 		width: 100%;
-		padding-right: 0;
-		text-align: center;
 		top: 5em;
 	}
 
@@ -1050,5 +1102,34 @@ footer p:last-child {
 
 	.presentations ul {
 		padding-left: 20px;
+	}
+
+	.design-process p {
+		margin: 1em;
+	}
+
+	.pages-lines__project {
+		left: 1em;
+	}
+
+	.pages-lines-line3, .pages-lines-line4 {
+		width: 40px;
+		height: 150px;
+	}
+
+	#pages-lines-line3, #pages-lines-line4 {
+		stroke: #fff;
+		stroke-width: 3;
+		stroke-dasharray: 700;
+		stroke-dashoffset: 700;
+		animation: draw 10s forwards linear;
+	}
+
+	.page-title__project {
+		width: 100%;
+	}
+
+	.current-projects__project {
+		margin: 15em 0 3em 0;
 	}
 }
