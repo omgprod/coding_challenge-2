@@ -578,15 +578,6 @@ footer {
 	border-radius: 50%;
 }
 
-/* Tagline */
-.tagline {
-	margin: -2em 4em 3em 0;
-	padding: 0 1em;
-	text-align: right;
-	font-size: 1.1em;
-	font-weight: bold;
-}
-
 /* Contact Me form */
 #mc_embed_signup {
 	width: 300px;
